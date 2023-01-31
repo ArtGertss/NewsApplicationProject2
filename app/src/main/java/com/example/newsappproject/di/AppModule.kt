@@ -1,6 +1,6 @@
 package com.example.newsappproject.di
 
-import com.example.newsappproject.data.NewsService
+import com.example.newsappproject.data.db.api.NewsService
 import com.example.newsappproject.utils.Constants.Companion.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -19,7 +19,7 @@ object AppModule {
     fun baseUrl() = BASE_URL
 
 
-    //HttpLoggingInterceptor для вывода информации запросов на сервер в логи
+    //HttpLoggingInterceptor используется для вывода информации запросов на сервер в логи
     @Provides
     fun logging() = HttpLoggingInterceptor()
         .setLevel(HttpLoggingInterceptor.Level.BODY)

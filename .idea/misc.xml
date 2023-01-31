@@ -3,12 +3,14 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/drawable/bg_image.xml" value="0.185" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/fragment_details.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/fragment_favorite.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/fragment_main.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/fragment_search.xml" value="0.22826086956521738" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/fragment_splash.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/layout/item_article.xml" value="0.536" />
         <entry key="..\:/Users/gerts/AndroidStudioProjects/NewsAppProject/app/src/main/res/menu/bottom_nav_menu.xml" value="0.253125" />
       </map>
     </option>
