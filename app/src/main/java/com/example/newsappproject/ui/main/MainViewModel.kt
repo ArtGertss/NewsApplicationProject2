@@ -23,16 +23,17 @@ val newsLiveData: MutableLiveData<Resource<NewsResponse>> = MutableLiveData()
         getNews("ru")
     }
 
-    private fun getNews(countryCode: String) = viewModelScope.launch {
-        newsLiveData.postValue(Resource.Loading())
-        val response = repository.getNews(countryCode = countryCode, pageNumber = newsPage)
-        if(response.isSuccessful){
-            response.body().let { res ->
-                newsLiveData.postValue(Resource.Success(res))
+    private fun getNews(countryCode: String) =
+        viewModelScope.launch {
+            newsLiveData.postValue(Resource.Loading())
+            val response = repository.getNews(countryCode = countryCode, pageNumber = newsPage)
+            if(response.isSuccessful){
+                response.body().let { res ->
+                    newsLiveData.postValue(Resource.Success(res))
+                }
+            }else{
+                newsLiveData.postValue(Resource.Error(response.message()))
             }
-        }else{
-            newsLiveData.postValue(Resource.Error(response.message()))
-        }
     }
 
 }

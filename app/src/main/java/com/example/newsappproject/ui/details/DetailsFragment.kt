@@ -22,13 +22,12 @@ import dagger.hilt.android.AndroidEntryPoint
 class DetailsFragment : Fragment() {
 
 
-
     private var _binding: FragmentDetailsBinding? = null
     private val mBinding get() = _binding!!
     private val viewModel by viewModels<DetailsViewModel>()
 
     //!!!!!!!!
-    private val bundleArgs: DetailsFragmentArgs by navArgs()
+      private val bundleArgs: DetailsFragmentArgs by navArgs()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -70,9 +69,13 @@ class DetailsFragment : Fragment() {
                     ).show()
                 }
             }
-            mBinding.iconFavorite.setOnClickListener{
-                viewModel.getSavedArticle(article)
+
+            mBinding.iconFavorite.setOnClickListener {
+                viewModel.saveFavoriteArticle(article)
+            }
+
             }
         }
-    }
+
+
 }

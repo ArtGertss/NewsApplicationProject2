@@ -22,10 +22,13 @@ class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
         setContentView(R.layout.fragment_splash)
 
+
+        //set splashFragment
         CoroutineScope(Dispatchers.Main).launch {
-            delay(5000)
+            delay(500)
             _binding = ActivityMainBinding.inflate(layoutInflater)
             setContentView(mBinding.root)
             bottom_nav_menu.setupWithNavController(

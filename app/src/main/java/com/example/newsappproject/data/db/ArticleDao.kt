@@ -12,7 +12,7 @@ interface ArticleDao {
 
     @androidx.room.Query("SELECT * FROM articles")
     suspend fun getAllArticles(): List<Article>
-
+//2 функции которые вставляют или удаляют нашу статью
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(article: Article)
